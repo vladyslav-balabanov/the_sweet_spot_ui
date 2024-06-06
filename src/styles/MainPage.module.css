@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.text a {
+    display: inline-block;
+    background: rgb(155, 155, 155);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.text a:hover {
+    opacity: .8;
+}
