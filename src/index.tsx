@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import UserStore from './store/UserStore';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+type ContextValue = {
+    user: UserStore;
+} | null;
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export const Context = createContext<ContextValue>(null);
+
+const RootComponent: React.FC = () => {
+    return (
+        <Context.Provider value={{
+            user: new UserStore()
+        }}>
+            <App />
+        </Context.Provider>
+    );
+};
+
+ReactDOM.createRoot(
+    document.getElementById('root') as HTMLElement
+).render(<RootComponent />);
