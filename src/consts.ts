@@ -1,0 +1,10 @@
+export const REACT_APP_API_URL = "http://thesweetspot-001-site1.htempurl.com/";
+export const MAIN_ROUTE = '/'
+export const PRODUCTS_ROUTE = '/products';
+export const ORDERS_ROUTE = '/orders';
+export const REVIEWS_ROUTE = '/reviews'
+export const LOGIN_ROUTE = '/login'
+export const CHART_ROUTE = '/charts'
+export const MANAGERS_ROUTE = '/managers'
+export const ordersStatuses = ["NotPaid", "Paid", "Processed", "Sent", "Delivered", "Received"];
+export const productCatefories = ["Cakes", "Candies", "Pies", "Pastry", "Cookies", "Other"];
