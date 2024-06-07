@@ -6,7 +6,7 @@ export const MainPage = () => {
     <div className={cl.container}>
       <div className={cl.text}>
         <span>Download our mobile application!</span>
-        <a href="https://drive.google.com/file/d/1X2fXuhhZsVEnnW6x6ZzXqLPH4YTtjxAR/view?usp=sharing">Download</a>
+          <a href={"/app-debug.apk"} download={"app-debug.apk"}>Download</a>
       </div>
     </div>
   )
