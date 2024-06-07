@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from 'react';
-import './styles/App.css';
 import { BrowserRouter } from 'react-router-dom';
 import { Context } from '.';
 import { checkToken, UserClaims } from './http/authApi';
 import { jwtDecode } from 'jwt-decode';
 import mapJwtClaims from './utils/mapJwtClaims';
 import {AppRouter} from "./components/AppRouter/AppRouter";
+import './styles/App.css';
 
 function App() {
   const contextValue = useContext(Context);
