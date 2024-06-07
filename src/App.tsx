@@ -5,6 +5,7 @@ import { Context } from '.';
 import { checkToken, UserClaims } from './http/authApi';
 import { jwtDecode } from 'jwt-decode';
 import mapJwtClaims from './utils/mapJwtClaims';
+import {AppRouter} from "./components/AppRouter/AppRouter";
 
 function App() {
   const contextValue = useContext(Context);
@@ -22,8 +23,8 @@ function App() {
   }, [user])
 
   return (
-      //todo: add <AppRouter />
       <BrowserRouter>
+        <AppRouter/>
       </BrowserRouter>
   );
 }
