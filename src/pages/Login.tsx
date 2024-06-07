@@ -31,7 +31,7 @@ export const Login = () => {
     return (
         <div className={cl.login}>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <Modal.Header closeButton>
+                <Modal.Header>
                     <Modal.Title>Login</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
